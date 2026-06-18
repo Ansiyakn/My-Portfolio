@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+  <div class="nav-header">
+    
+     <img id="log" src="lo.png"  style="margin: 10px;"  ait="this is a image" width="100px" height="100px"><br>
+     <h1>  My Portfolio</h1>
+    <button class="menu-toggle">&#9776;</button>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+  </ul>
+  <button class="b">Get Started</button>
+</nav>
+
+   <section class="home" id="home">
+    <div class="left">
+        <h1 class="myclass" >ANSIYA K N</h1>
+        <p>B.Tech Computer Science Engineering Student</p>
+   </div>
+   <div class="right">
+        <img id="my" src="im.webp"  ait="this is a image" width="500px" height="300px">
+    </div>
+    </section><br><br> 
+    <section class="about" id="about" > 
+        <h2 >About Me</h2>
+        <p>Hello! I am Ansiya K N, a second-year B.Tech CSE student. I am passionate about web development, programming, and learning new technologies</p>
+    </section>  
+    
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C Programming</li>
+            <li>Python</li>
+        </ol>  
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" ><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" ><br><br>
+            <label for="send"></label>
+            <input type="button" id="send" value="sendmessage" >
+            
+        </form>
+    </section>
+    <script>
+  // Select the toggle button and the nav menu
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Add click event
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active'); // show/hide menu
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(40, 3, 55);
+  font-family: Arial, sans-serif;
+}
+/* Navbar base */
+nav {
+  background-color:white;
+  color: #390e4b;
+  padding: 0px;
+  align-items: center;
+  display: flex;
+  justify-content:space-around ;
+  margin: 20px;
+  
+}
+.b{
+  background-color: #390e4b;
+  color:white;
+  border-radius: 10px;
+  margin-right: 0px;
+  width: 100px;
+  height:50px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(40,3,55);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;       /* use font-weight instead of font */
+  color: #390e4b;          /* sets text color */
+}
+.nav-links li a {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits parent color (#390e4b) */
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+
+  .nav-links {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color:#ddaaaa;
+    padding: 5px;
+    color: black;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  #my {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .about,
+  .skills,
+  .contact {
+    padding: 40px 20px;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .home, .about, .skills, .contact {
+    padding: 20px;
+    font-size: 0.9rem;
+   
+  }
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+
+  .nav-links {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color:#ddaaaa;
+    padding: 5px;
+    color: black;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+}
+
+
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px;
+  background-color:rgb(40, 3, 55);
+  color:white;
+  margin: 0px;
+  background-size: cover;
+  
+}
+
+.about {
+  padding: 200px;
+  background:white;
+    color:rgb(40,3,55);
+    
+
+}
+
+
+/* Skills */
+.skills {
+  padding: 200px;
+  background:rgb(40, 3, 55);
+  color: #fdf2e9;
+  
+  
+}
+
+/* Contact */
+.contact {
+  padding: 150px;
+  background:white;
+  color:rgb(40,3,55);
+  font-weight: 400;
+}
+.contact input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact input[type="button"] {
+  background: #8e44ad;
+  color:black;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact input[type="button"]:hover {
+  background: #732d91;
+}
+@media (max-width: 347px) {
+
+  nav {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .about,
+  .skills,
+  .contact {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #my {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  #log {
+    width: 50px;
+    height: auto;
+  }
+
+  .b {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .contact input {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+
+  .nav-links {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color:#ddaaaa;
+    padding: 5px;
+    color: black;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+}
